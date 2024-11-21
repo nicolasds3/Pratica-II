@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($conexao->query($sql) === TRUE) {
         echo "<div style='color: green;'>Cadastro realizado com sucesso!</div>";
-        header("Localion: login.php");
+        header("Location: criar-solicitacao.php");
         exit();
     } else {
         echo "<div style='color: red;'>Erro:" . $conexao->error . "</div>";
